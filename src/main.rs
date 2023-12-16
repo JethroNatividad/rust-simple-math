@@ -24,10 +24,14 @@ fn main() -> io::Result<()> {
     print!("What is the first number? ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut first_number)?;
+    // Check if not number
+    // Dont proceed
     
     print!("What is the second number? ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut second_number)?;
+    // Check if not number
+    // Dont proceed
 
     let first_number_parsed: i32 = first_number.trim().parse::<i32>().unwrap();
     let second_number_parsed: i32 = second_number.trim().parse::<i32>().unwrap();
